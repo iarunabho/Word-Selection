@@ -1,43 +1,30 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>A Pen by Arunabho Majumder</title>
 
-<head>
-  <meta charset="UTF-8">
-  <title>A Pen by  Arunabho Majumder</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
 
-  
-</head>
+	<body>
+		<div contenteditable="true" onmouseup="snapSelectionToWord()">
+			Hello, <b>her</b>e is some &nbsp; <i>nice text</i>. Please try selecting
+			some.
+		</div>
+		<div id="content-area" onmouseup="snapSelectionToWord()">
+			How to Ask? <br />
+			Is your question about programming?<br />
 
-<body>
+			We prefer questions that can be answered, not just discussed. <br />
 
-  <div contenteditable="true" onmouseup="snapSelectionToWord()">
-    Hello, <b>her</b>e is some &nbsp; <i>nice text</i>. Please try selecting some.
-</div>
-<div id="content-area" onmouseup="snapSelectionToWord()" >
-    How to Ask? <br />
-Is your question about programming?<br />
+			Provide details. Share your research.<br />
 
-We prefer questions that can be answered, not just discussed.<br />
+			If your question is about this website, ask it on meta instead.<br />
+		</div>
+		<br />
+		<div id="show-text"></div>
 
-Provide details. Share your research.<br />
-
-If your question is about this website, ask it on meta instead.<br />
-
-</div>
-<br />
-<div id="show-text"></div>
-  
-  
-
-    <script  src="js/index.js"></script>
-
-
-
-
-</body>
-
+		<script src="js/index.js"></script>
+	</body>
 </html>
